@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website - Campus Life</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Campus Life Specific Styles */
+        .campus-life-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 20px;
+        }
+
+        .campus-life-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden; /* Hide overflowing content */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s; /* Smooth hover effect */
+        }
+
+        .campus-life-item:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        .campus-life-item img {
+            width: 100%;
+            height: auto;
+            display: block; /* Prevent small space below image */
+            object-fit: cover; /* Cover the entire area */
+        }
+
+        .campus-life-item-content {
+            padding: 20px;
+        }
+
+        .campus-life-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .campus-life-item p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>College Name</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="campus.html">Campus Life</a></li>
+        </ul>
+    </nav>
+
+    <section id="campus-life">
+        <h2>Campus Life</h2>
+
+        <div class="campus-life-container">
+
+            <div class="campus-life-item">
+                <img src="https://i0.wp.com/vuniversity.in/wp-content/uploads/2023/09/Campus-Life.png?fit=600%2C400&ssl=1" alt="Campus Life 1">
+                <div class="campus-life-item-content">
+                    <h3>Clubs and Organizations</h3>
+                    <p>Details about student clubs and organizations.</p>
+                </div>
+            </div>
+
+            <div class="campus-life-item">
+                <img src="https://seadegree.ac.in/wp-content/uploads/2023/06/NVP_4846-scaled.jpg.webp" alt="Campus Life 2">
+                <div class="campus-life-item-content">
+                    <h3>Sports and Recreation</h3>
+                    <p>Information about sports facilities and activities.</p>
+                </div>
+            </div>
+
+            <div class="campus-life-item">
+                <img src="https://www.vdainc.com/wp-content/uploads/2018/09/Emerson-College-Alumni-Weekend-2017_1100x688.jpg" alt="Campus Life 3">
+                <div class="campus-life-item-content">
+                    <h3>Campus Events</h3>
+                    <p>Details about campus-wide events.</p>
+                </div>
+            </div>
+
+            </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 College Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
