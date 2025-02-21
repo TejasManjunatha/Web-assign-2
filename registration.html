@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form - NITW</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        marquee {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        form {
+            text-align: center;
+            margin: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 10px 0;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        hr {
+            width: 80%;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form - NIT Warangal</h1>
+
+    <marquee>
+        <h3><i>Welcome to the NITW Registration Portal! Please fill out the details below.</i></h3>
+    </marquee>
+
+    <form action="" method="post">
+        <label>First Name:</label>
+        <input type="text" name="firstname" required><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="lastname" required><br><hr>
+
+        <label for="birthday">Date of Birth:</label>
+        <input type="date" id="birthday" name="birthday" required><br><hr>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><hr>
+
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile" pattern="[0-9]{10}" required><br><hr>
+
+        <label>Gender:</label><br>
+        <select name="gender" required>
+            <option value="Male" selected>Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><hr>
+
+        <label>Age:</label><br>
+        <input type="radio" id="age1" name="age" value="Under 18" required>
+        <label for="age1">Under 18</label><br>
+        <input type="radio" id="age2" name="age" value="18-25" required>
+        <label for="age2">18 to 25</label><br>
+        <input type="radio" id="age3" name="age" value="Above 25" required>
+        <label for="age3">Above 25</label><br><hr>
+
+        <label>Course of Interest:</label><br>
+        <select name="course" required>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Chemical Engineering">Chemical Engineering</option>
+        </select><br><hr>
+
+        <label>State:</label><br>
+        <select name="state" required>
+            <option value="Telangana">Telangana</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Maharashtra">Maharashtra</option>
+        </select><br><hr>
+
+        <label>Preferred Mode of Communication:</label><br>
+        <select name="communication" required>
+            <option value="Email">Email</option>
+            <option value="Phone">Phone</option>
+            <option value="SMS">SMS</option>
+        </select><br><hr>
+
+        <label>Why do you want to join NIT Warangal?</label><br>
+        <textarea name="reason" rows="4" cols="50" placeholder="Write your reason here" required></textarea><br><hr>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
